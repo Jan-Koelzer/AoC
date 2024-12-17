@@ -19,7 +19,7 @@ fun two(intLeftSide: List<Int>, intRightSide: List<Int>): Int {
 }
 
 fun main() {
-    val (intLeftSide, intRightSide) = File("inputs/2024-01.txt").readLines().map { line ->
+    val (intLeftSide, intRightSide) = File("inputs/2024/2024-01.txt").readLines().map { line ->
         val (left, right) = line.split("   ").map { it.toInt() }
         left to right
     }.unzip()
